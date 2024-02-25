@@ -1,0 +1,110 @@
+.container{
+    width: 100%;
+    margin: 0px;
+
+}
+.top{
+    width: 100%;
+    display: flex;
+    background-color: rgb(127, 136, 181);
+}
+.title{
+    font-size: x-large;
+    width: 9em;
+    margin: 2em 6em 2em 2em;
+    color: white;
+}
+.contact{
+    position: relative;
+    margin-right: 16em;
+}
+.contact>div{
+    width: 16em;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.search-bar{
+    position: relative;
+    width: 100%;
+}
+.search-bar>input{
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translate(0,-50%);
+}
+.middle{
+    display: grid;
+    position: relative;
+    grid-template-columns: auto auto 160px;
+    grid-template-rows: auto auto 600px;
+    background-color: rgb(117, 148, 171);
+}
+.navigation-box{
+    background-color: rgb(21, 60, 90);
+}
+.navigation-box .navigation-title{
+    text-align: center;
+    font-size: large;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: rgb(6, 39, 65);
+    color: white;
+}
+.navigation-box, .navigation-box>.navigation-title{
+    border: 1px solid gray;
+}
+.navigation-box ul{
+    list-style-type: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 0;
+    color: white;
+}
+.center{
+    width: 600px;
+}
+.item-container, .content-title{
+    margin: 20px;
+}
+.content-title{
+    font-size: large;
+    color: darkred;
+}
+.item-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+.item{
+    width: 150px;
+    height: 200px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+}
+.item img{
+    max-width: 100%;
+}
+.page{
+    float: right;
+}
+.right{
+    position: absolute;
+    width: 160px;
+    height: 600px;
+    right: 0px;
+    background-color: rgb(41, 81, 111);
+}
+.footer{
+    background-color: rgb(127, 136, 181);
+}
+.information, .references{
+    text-align: center;
+}
+.references>span>a:link, .references>span>a:visited, .references>span>a:hover, .references>span>a:active{
+    text-decoration: none;
+    color: black;
+}
+

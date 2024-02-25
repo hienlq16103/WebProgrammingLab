@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <form name="myForm">
+                <fieldset>
+                    <legend>Set cookie</legend>
+                    <label>
+                        Name: <input type="text" name="name" placeholder="cookie name">
+                    </label>
+                    <br>
+                    <label>
+                        Value: <input type="text" name="value" placeholder="cookie value">
+                    </label>
+                    <br>
+                    <label>
+                        Expiration days: <input type="number" name="expirationDays" min="0">
+                    </label>
+                    <br>
+                    <button type="button" onclick="SetCookie()">Set cookie</button>
+                </fieldset>
+                <fieldset>
+                    <legend>Remove cookie</legend>
+                    <label>
+                        Name: <input type="text" name="removingName" placeholder="cookie name to be removed">
+                    </label>
+                    <br>
+                    <button type="button" onclick="RemoveCookie()">Remove</button>
+                </fieldset>
+                <button type="button" onclick="DisplayAllCookie()">Show all cookies</button>
+                <button type="button" onclick="ClearAllCookie()">Clear cookies</button>
+            </form>
+            <div class="display">
+                <fieldset>
+                    <legend>Display</legend>
+                    <div class="output" id="output"></div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <script src="CookieManagement.js"></script>
+    </body>
+</html>

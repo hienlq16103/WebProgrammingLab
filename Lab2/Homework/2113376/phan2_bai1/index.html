@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="control-panel">
+                <form name="control">
+                    <button type="button" onclick="CreateTable()">Create table</button><br>
+                    <button type="button" onclick="AddRow()">Add row</button><br>
+                    <button type="button" onclick="AddColumn()">Add column</button><br>
+                    Enter row number: <input type="number" name="row-number" id="row-number" min="0">
+                    <button type="button" onclick="RemoveRow()">Remove row</button><br>
+                    Enter column number: <input type="number" name="column-number" id="column-number" min="0">
+                    <button type="button" onclick="RemoveColumn()">Remove column</button><br>
+                    <button type="button" onclick="DeleteTable()">Delete table</button>
+                </form>
+            </div>
+            <div id="display" class="display"></div>
+        </div>
+    </body>
+</html>

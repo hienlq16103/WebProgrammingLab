@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <form name="calculator-form" method="get" action="solve.php">
+                <table id="calculator">
+                    <tr>
+                        <td colspan="4"><input type="text" id="result" name="expression"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="button" onclick="ClearScreen()">Clear</button></td>
+                        <td><button type="button" onclick="UpdateResult('**(-1)')">^(-1)</button></td>
+                        <td><button type="button" onclick="UpdateResult('/')">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" onclick="UpdateResult('7')">7</button></td>
+                        <td><button type="button" onclick="UpdateResult('8')">8</button></td>
+                        <td><button type="button" onclick="UpdateResult('9')">9</button></td>
+                        <td><button type="button" onclick="UpdateResult('*')">*</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" onclick="UpdateResult('4')">4</button></td>
+                        <td><button type="button" onclick="UpdateResult('5')">5</button></td>
+                        <td><button type="button" onclick="UpdateResult('6')">6</button></td>
+                        <td><button type="button" onclick="UpdateResult('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" onclick="UpdateResult('1')">1</button></td>
+                        <td><button type="button" onclick="UpdateResult('2')">2</button></td>
+                        <td><button type="button" onclick="UpdateResult('3')">3</button></td>
+                        <td><button type="button" onclick="UpdateResult('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" onclick="UpdateResult('0')">0</button></td>
+                        <td><button type="button" onclick="UpdateResult('.')">.</button></td>
+                        <td><button type="button" onclick="UpdateResult('**')">^</button></td>
+                        <td><button type="submit" class="solve">=</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

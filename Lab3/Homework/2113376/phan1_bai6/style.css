@@ -1,0 +1,49 @@
+.container{
+    margin: auto;
+    width: fit-content;
+    background-color: rgb(138,135,135);
+    padding: 10px;
+}
+form{
+    color: rgb(208,213,194);
+}
+form input{
+    padding: 0.5em;
+    height: 1em;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form input:focus{
+    background-color: #ddd;
+    outline: none;
+}
+.container form div{
+    display: flex;
+    justify-content: space-around;
+}
+form button{
+    background-color: rgb(164,174,140);
+    width: 40%;
+    height: 3em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
+form button:hover{
+    opacity: 80%;
+    text-align: center;
+}
+textarea{
+    padding: 0.5em;
+    height: 20em;
+    width: 30em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+text:focus{
+    background-color: #ddd;
+    outline: none;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <form name="myForm" method="post" action="validate.php">
+                First name: <input type="text" name="FirstName" maxlength="30"><br>
+                Last name: <input type="text" name="LastName" maxlength="30"><br>
+                Email: <input type="text" name="email"><br>
+                Password: <input type="password" name="password"><br>
+                Day of birth: <input type="date" name="birthday"><br>
+                Gender: male <input type="radio" name="gender" value="male"> |
+                female <input type="radio" name="gender" value="female"> |
+                undefined <input type="radio" name="gender" value="undefined"> <br>
+                Country:
+                <select name="Country">
+                    <option value="Vietnam">Vietnam</option>
+                    <option value="Australia">Australia</option>
+                    <option value="UnitedStates">United States</option>
+                    <option value="India">India</option>
+                    <option value="Other" selected>Other</option>
+                </select>
+                About:<br>
+                <textarea maxlength="10000" name="about" placeholder="about your self ..."></textarea>
+                <div>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+        integrity= 
+"sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script> 
+    <script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+        integrity= 
+"sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <table id="calculator">
+                <tr>
+                    <td colspan="4"><input type="text" id="result"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><button type="button" onclick="ClearScreen()">Clear</button></td>
+                    <td><button type="button" onclick="UpdateResult('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="UpdateResult('7')">7</button></td>
+                    <td><button type="button" onclick="UpdateResult('8')">8</button></td>
+                    <td><button type="button" onclick="UpdateResult('9')">9</button></td>
+                    <td><button type="button" onclick="UpdateResult('*')">*</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="UpdateResult('4')">4</button></td>
+                    <td><button type="button" onclick="UpdateResult('5')">5</button></td>
+                    <td><button type="button" onclick="UpdateResult('6')">6</button></td>
+                    <td><button type="button" onclick="UpdateResult('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="UpdateResult('1')">1</button></td>
+                    <td><button type="button" onclick="UpdateResult('2')">2</button></td>
+                    <td><button type="button" onclick="UpdateResult('3')">3</button></td>
+                    <td><button type="button" onclick="UpdateResult('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="UpdateResult('0')">0</button></td>
+                    <td><button type="button" onclick="UpdateResult('.')">.</button></td>
+                    <td><button type="button" onclick="UpdateResult('^')">^</button></td>
+                    <td><button type="button" class="solve" onclick="Solve()">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

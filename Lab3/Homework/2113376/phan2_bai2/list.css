@@ -1,0 +1,208 @@
+.container{
+    margin: auto;
+}
+.top{
+    display: flex;
+    flex-flow: wrap row;
+    background-color: rgb(127, 136, 181);
+    align-content: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.top>.left{
+    width: 50%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+}
+.title{
+    font-size: x-large;
+    width: 9em;
+    color: white;
+}
+.search-bar>input{
+    border-radius: 25px;
+    padding: 5px;
+}
+.middle{
+    display: grid;
+    position: relative;
+    grid-template-columns: 160px auto 160px;
+    grid-template-rows: auto auto 600px;
+    background-color: rgb(117, 148, 171);
+    justify-content: stretch space-between;
+}
+.navigation-box{
+    background-color: rgb(21, 60, 90);
+}
+.navigation-box .navigation-title{
+    text-align: center;
+    font-size: large;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: rgb(6, 39, 65);
+    color: white;
+}
+.navigation-box, .navigation-box>.navigation-title{
+    border: 1px solid gray;
+}
+.navigation-box ul{
+    list-style-type: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 0;
+    color: white;
+}
+
+.center{
+    padding: 10px 20px 10px 20px;
+}
+.item-container, .content-title{
+    margin: 20px;
+}
+.content-title{
+    font-size: large;
+    color: darkred;
+}
+.item-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+}
+.item{
+    width: 150px;
+    height: 200px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+}
+.item img{
+    max-width: 100%;
+}
+.right{
+    width: 160px;
+    height: 600px;
+    background-color: rgb(41, 81, 111);
+}
+.footer{
+    background-color: rgb(127, 136, 181);
+}
+.information, .references{
+    text-align: center;
+}
+.references>span>a:link, .references>span>a:visited, .references>span>a:hover, .references>span>a:active{
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width: 1200px){
+    .item-container{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        gap: 10px;
+    }
+    .item{
+        width: 150px;
+        height: 200px;
+        padding: 10px;
+        background-color: white;
+        border: 1px solid black;
+    }
+}
+@media only screen and (max-width: 992px){
+    .item-container{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+    }
+    .item{
+        width: 120px;
+        height: 160px;
+        padding: 10px;
+        background-color: white;
+        border: 1px solid black;
+    }
+}
+@media only screen and (max-width: 768px){
+    .middle{
+        grid-template-columns: 160px auto;
+    }
+    .right{
+        width: 0px;
+        display: none;
+    }
+    .item-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 5px;
+    }
+    .item{
+        width: 120px;
+        height: 160px;
+        padding: 5px;
+        background-color: white;
+        border: 1px solid black;
+    }
+}
+@media only screen and (max-width: 480px){
+    .top{
+        display: flex;
+        flex-flow: wrap column;
+        padding: 10px;
+    }
+    .title{
+        font-size: large;
+        width: fit-content;
+        color: white;
+    }
+    .middle{
+        grid-template-columns: 100px auto;
+    }
+    .navigation-box .navigation-title{
+        text-align: center;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    .navigation-box, .navigation-box>.navigation-title{
+        border: 1px solid gray;
+    }
+    .navigation-box ul{
+        list-style-type: none;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    .center{
+        padding: 5px 10px 5px 10px;
+    }
+    .center>.directory{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .item-container{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+    .item{
+        width: 120px;
+        height: 160px;
+        padding: 5px;
+        background-color: white;
+        border: 1px solid black;
+    }
+
+}
+@media only screen and (max-width: 430px){
+    .item-container{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+    .item{
+        width: 120px;
+        height: 160px;
+        padding: 5px;
+        background-color: white;
+        border: 1px solid black;
+    }
+}
